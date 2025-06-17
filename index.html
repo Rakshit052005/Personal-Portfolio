@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakshit | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    #phone-number {
+      display: none;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #333;
+    }
+    .contact-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .card h3 i {
+      margin-right: 8px;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile Section -->
+  <header class="profile-card">
+    <img src="profile.jpg" alt="Profile Photo" class="avatar">
+    <div>
+      <h1>Rakshit</h1>
+      <p>Ex-Summer Intern CODTECH IT SOLUTIONS PVT.LTD | CSE'26 | WEB DEVELOPER </p>
+    </div>
+    <button class="contact-btn" onclick="showContact()">Show Contacts</button>
+    <p id="phone-number">📞 9729095875</p>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>Hi! I am a final-year Computer Science Engineering student at Chandigarh University with a strong work ethic and a passion for technology. Originating from Haryana, I bring a diverse perspective and a determined attitude to all my endeavors. I am eager to leverage my skills and knowledge to contribute to innovative projects and further my growth in the tech industry.</p>
+
+    <p class="tagline">💡 Continuously learning, consistently building, and striving for growth every day.</p>
+  </section>
+
+  <!-- Career Path / What I'm Doing -->
+  <section id="career" class="skills-section">
+    <h2>Areas of Work</h2>
+
+    <div class="card">
+      <h3><i class="fas fa-code"></i> Web Development</h3>
+      <p>Developing performant, accessible, and mobile-responsive user interfaces leveraging modern front-end frameworks.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-laptop-code"></i> Software Development</h3>
+      <p>Proficient in C/C++, HTML/CSS/JavaScript, with strong foundations in DBMS, Operating Systems, DSA, and Computer Networks.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain"></i> DSA & Problem Solving</h3>
+      <p>Strengthening Data Structures and Algorithms through hands-on coding and problem-solving on competitive platforms like LeetCode.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-project-diagram"></i> System Design</h3>
+      <p>Worked on frontend web development and built several responsive and user-friendly projects.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="skills-section">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Sound Sync Pro (Jan 2024 – April 2024)</h3>
+      <p>
+        A project focused on real-time synchronization of visual elements with audio playback. Includes interactive features like animated waveforms, dynamic color changes, and responsive design.<br>
+        <strong>Technologies:</strong> HTML, CSS
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Furni-Sphere Website (July 2024 – Dec 2024)</h3>
+      <p>
+        A web-based furniture shopping platform with smart search, intuitive UI, and product filters to enhance user experience.<br>
+        <strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap, PHP, SQL, Laravel
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Decentralised Voting System using Blockchain (Jan 2025 – April 2025)</h3>
+      <p>
+        A secure voting platform using Blockchain where each vote is stored immutably. Smart contracts automate vote counting and verification.<br>
+        <strong>Technologies:</strong> Solidity, Vyper, Ganache
+      </p>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="skills-section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Cloud Computing – Silver Certificate (NPTEL)</li>
+      <li>Multi-Core Computer Architecture – Elite Certificate (NPTEL)</li>
+      <li>Foundation of Cloud IoT Edge ML – Gold Certificate (NPTEL)</li>
+      <li>Computer Fundamentals with MS Office</li>
+      <li>AWS Cloud Computing (Chandigarh University)</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="skills-section">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:rakshitgarg897@gmail.com">rakshitgarg897@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rakshit-garg-2597a0270/" target="_blank">rakshit-garg-2597a0270</a></p>
+    <p><strong>Phone:</strong> 9729095875</p>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <footer class="bottom-nav">
+    <a href="#about">About</a>
+    <a href="#career">Career Path</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </footer>
+
+  <!-- JavaScript to show contact -->
+  <script>
+    function showContact() {
+      document.getElementById("phone-number").style.display = "block";
+    }
+  </script>
+
+</body>
+<style>
+  /* Add spacing between contact section and footer */
+  #contact {
+    margin-bottom: 40px;
+  }
+</style>
+<style>
+  /* Change hover color for bottom navigation links */
+  .bottom-nav a:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transition: background 0.2s, color 0.2s;
+  }
+</style>
+<style>
+  /* Make LinkedIn link blue */
+  #contact a[href*="linkedin.com"] {
+    color: #699ebc;
+    font-weight: bold;
+  }
+</style>
+<style>
+  /* Make LinkedIn link color same as email link */
+  #contact a[href^="mailto:"],
+  #contact a[href*="linkedin.com"] {
+    color: #007bff;
+    font-weight: bold;
+  }
+</style></style>
